@@ -10,151 +10,49 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/style.css">
-    <title>Rentals Sport Cars</title>
+    <title>AutoBahn Cars</title>
 </head>
 
 <body>
-    <header class="">
-        <nav class="navbar border-bottom">
+    <main class="container">
+        <section class="row section-login justify-content-center align-items-center ">
 
-            <div class="col-2 d-flex align-items-center">
-                <button type="button" class="btn p-0 ms-5 me-5" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvas">
-                    <i class="bi bi-list fs-2"></i>
-                </button>
-                <img href="resources/imgs/brand-icon.svg">
-                </img>
+            <article class="col-lg-6">
 
-
-            </div>
-            <div class="col-8 d-flex me-auto justify-content-center">
-                <p class="text-secondary m-0 d-none d-sm-block fs-custom" style="--bs-text-opacity: .7;">Potência Sob
-                    Aluguel: Sinta a Emoção em Cada Curva!</p>
-            </div>
-
-
-        </nav>
-
-        <div class="offcanvas offcanvas-start padding-offset-navbar" data-bs-backdrop="true"
-            style="--bs-offcanvas-width: 100px;" id="offcanvas" aria-modal="true" role="dialog">
-            <div class="offcanvas-body">
-                <div class="d-flex flex-column gap-4">
-                    <button class="btn p-0">
-                        <i class="bi bi-person-circle fs-4"></i>
-                    </button>
-                    <button class="btn p-0">
-                        <i class="bi bi-person-circle fs-4"></i>
-                    </button>
-                    <button class="btn p-0">
-                        <i class="bi bi-person-circle fs-4"></i>
-                    </button>
-                    <button class="btn p-0">
-                        <i class="bi bi-person-circle fs-4"></i>
-                    </button>
-                </div>
-
-
-            </div>
-        </div>
-
-        </div>
-
-
-    </header>
-
-    <section class="d-flex justify-content-center mt-5">
-
-
- 
-        <div class="col-8">
-            
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-12 text-warning">
-                    <label for="" class="text-decoration-underline">aaaaa</label>
-                </div>
-                <div class="col-md-4">
+                <div class="card card-form">
                     
-                    <input type="text" class="form-control-custom" id="validationCustom01" value="Mark" required>
-                    <div class="valid-feedback">
-                        Looks good!
+                    <p class="fs-3">Fazer login</p>
+                    <div class="card-body p-0">
+                        
+
+                        <form method="post">
+
+                            <div class="mb-2">
+                                <label for="email-input" class="mb-1">Endereço de email</label>
+                                <input type="email" id="email-input" name="UserEmail" placeholder="nome@exemplo.com"
+                                    class="form-control form-control-sm" required>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-1" for="password-email">Senha</label>
+                                <input type="password" id="password-email" name="UserPassword" placeholder="********"
+                                    class="form-control form-control-sm" required>
+                            </div>
+                            <div class="checkbox mb-4">
+                                <input type="checkbox" value="remember-me"> Lembrar login
+                            </div>
+                            <button class="w-100 btn btn-sm btn-main" type="submit">Entrar</button>
+
+                            <div class="text-center text-muted fw-light mt-3">
+                                © AutoBahn Cars
+                            </div>
+
+                        </form>
+
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    
-                    <input type="text" class="form-control-custom" id="validationCustom02" value="Otto" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-
-                <div class="d-flex col-md-4 align-items-center mt-5">
-                    <div class="form-check me-3 mt-3">
-                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked"
-                            required>
-                        <label class="form-check-label" for="validationFormCheck2">Masculino</label>
-                    </div>
-                    <div class="form-check mt-3">
-                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked"
-                            required>
-                        <label class="form-check-label" for="validationFormCheck3">Feminino</label>
-                        <div class="invalid-feedback">More example invalid feedback text</div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <label for="validationCustom03" class="form-label">City</label>
-                    <input type="text" class="form-control-custom" id="validationCustom03" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid city.
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <label for="validationCustom04" class="form-label">State</label>
-                    <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <label for="validationCustom05" class="form-label">Zip</label>
-                    <input type="text" class="form-control-custom" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <label for="validationCustom05" class="form-label">Zip</label>
-                    <input type="text" class="form-control-custom" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <label for="validationCustom05" class="form-label">Zip</label>
-                    <input type="text" class="form-control-custom" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-            
-            </form>
-
-
-        </div>
-    </section>
-
-
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
