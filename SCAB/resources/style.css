@@ -16,14 +16,16 @@
     --main-color: #F6A253;
     --main-color-houver: #D58942;
     --bs-border-width-cadastro: 2px;
+    --bs-border-color-login: #efefef;
 }
 
 .btn-main {
+    height: 55px;
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--main-color);
     --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-black);
+    --bs-btn-hover-color: var(--bs-white);
     --bs-btn-hover-bg: var(--main-color-houver);
     --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
     --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
@@ -53,29 +55,16 @@
 .form-check-input[type=radio] {
     border-color: orange;
 }
-.form-check-input:focus{
+
+.form-check-input:focus {
     box-shadow: none;
 }
-.form-check-input:checked{
+
+.form-check-input:checked {
     background-color: orange;
 }
-.form-control-custom {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--bs-body-color);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: var(--bs-body-bg);
-    background-clip: padding-box;
-    border: var(--bs-border-width-cadastro) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+
+
 .form-select {
     --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
     display: block;
@@ -89,22 +78,79 @@
     -moz-appearance: none;
     appearance: none;
     background-color: var(--bs-body-bg);
-    background-image: var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 16px 12px;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
 /* Css - Login */
-.section-login{
+.section-login {
     height: 100vh;
 }
-.card-form{
+
+.card-form {
     width: 500px;
     padding: 32px;
 
+}
+
+
+.text-main {
+    color: var(--main-color) !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #efefef;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color-login);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-check-input {
+    --bs-form-check-bg: #efefef;
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-form-check-bg);
+    background-image: var(--bs-form-check-bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.form-check-input[type=checkbox] {
+    border: none;
+}
+
+
+.half{
+    height: 100vh;
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imgs/Porsche918.jpg);
 }
