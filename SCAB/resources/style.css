@@ -3,22 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
+
+.login-background-color-main{
+    background-color: #E0E0E0;
+}
+.login-background-img{
+    background-image: url(imgs/login-image.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Css - Common  */
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
+
+
+
+
+
+.mt-7 {
+    margin-top: 6rem !important;
 }
 
-:root {
-    --main-color: #F6A253;
-    --main-color-houver: #D58942;
-    --bs-border-width-cadastro: 2px;
-    --bs-border-color-login: #efefef;
-}
-
+/* Boostrap Custo */
 .btn-main {
     height: 55px;
     --bs-btn-font-weight: 600;
@@ -39,71 +55,6 @@
     padding: 0px;
     font-size: 18px !important;
 }
-
-.mt-7 {
-    margin-top: 6rem !important;
-}
-
-
-.navbar {
-    height: 100px;
-}
-
-
-
-
-.form-check-input[type=radio] {
-    border-color: orange;
-}
-
-.form-check-input:focus {
-    box-shadow: none;
-}
-
-.form-check-input:checked {
-    background-color: orange;
-}
-
-
-.form-select {
-    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
-    display: block;
-    width: 100%;
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--bs-body-color);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: var(--bs-body-bg);
-    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-
-/* Css - Login */
-.section-login {
-    height: 100vh;
-}
-
-.card-form {
-    width: 500px;
-    padding: 32px;
-
-}
-
-
-.text-main {
-    color: var(--main-color) !important;
-}
-
 .form-control {
     display: block;
     width: 100%;
@@ -142,107 +93,66 @@
     print-color-adjust: exact;
 }
 
+
+
+
+.navbar {
+    height: 100px;
+}
+
+
+
+
+.form-check-input[type=radio] {
+    border-color: orange;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+    
+}
+
+.form-check-input:checked {
+    background-color: orange;
+}
 .form-check-input[type=checkbox] {
     border: none;
 }
 
 
-.half{
-    height: 100vh;
-    width: 25%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(imgs/Porsche918.jpg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: "Lato", sans-serif;
-}
-
-
-
-.main-head{
-    height: 150px;
-    background: #FFF;
-   
-}
-
-.sidenav {
-    height: 100%;
-    background-image: url(imgs/Porsche918.jpg);
-    background-position: 75%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    padding-top: 20px;
+.form-select {
+    --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+    display: block;
     width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
-.main {
-    padding: 0px 10px;
+/* Css - Login */
+.section-login {
+    height: 100vh;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-}
+.card-form {
+    width: 500px;
+    padding: 32px;
 
-@media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
-    }
-
-    .register-form{
-        margin-top: 10%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
-    }
-
-    .sidenav{
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-
-    .login-form{
-        margin-top: 80%;
-    }
-
-    .register-form{
-        margin-top: 20%;
-    }
 }
 
 
-.login-main-text{
-    margin-top: 20%;
-    padding: 60px;
-    color: #fff;
-}
 
-.login-main-text h2{
-    font-weight: 300;
-}
-
-.btn-black{
-    background-color: #000 !important;
-    color: #fff;
-}

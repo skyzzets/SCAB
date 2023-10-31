@@ -1,0 +1,19 @@
+:root {
+    --main-color: #F6A253;
+    --main-color-houver: #D58942;
+    --bs-border-width-cadastro: 2px;
+    --bs-border-color-login: #efefef;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+}
+
+.text-main {
+    color: var(--main-color) !important;
+}
+
