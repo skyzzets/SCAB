@@ -185,38 +185,3 @@
 
 
 
-.lista {
-    margin: 0;
-    padding-inline:0 ;
-    list-style: none;
-}
-
-.lista li{
-    padding: 1rem;
-    background: #86b7fe;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem -0.25rem black;
-}
-
-body{
-    justify-content: center;
-    display: flex;
-    margin-top: 300px;
-}
-
-
-
-
-.scroller{
-   
-    max-width: 600px; 
-
-}
-
-.scroller_inner {
-    padding-block: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-
-}
