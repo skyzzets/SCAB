@@ -5,6 +5,10 @@
     --color-secondary: #393b3c;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 * {
     font-family: 'Rubik', sans-serif;
 }
@@ -231,7 +235,6 @@
 }
 
 
-
 .card-showcase-height{
     max-height: 455px;
 }
@@ -247,12 +250,18 @@
     color: var(--color-black);
 }
 
+
+
 .card-details-height{
+    height: 900px;
+}
+.card-price-height{
     height: 330px;
-    width: 100%;
 }
 
 
-.card-price-height{
+
+.card-details-img-height{
     height: 330px;
+    width: 100%;
 }

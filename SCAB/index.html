@@ -40,13 +40,13 @@
                 </div>
 
                 <div class="col d-flex justify-content-end">
-                    <a href="javascript:GoToPageSearchCar()" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
                         <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
                     </a>
-                    <a href="index.html" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
                         <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
                     </a>
-                    <a href="login.html" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
                         <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
                     </a>
                 </div>
@@ -64,8 +64,8 @@
                         </h5>
     
                         <div class="input-group input-group-sm mb-3">
-                            <input type="text" class="form-control placeholder-glow" placeholder="Exemplo: Audi A6...">
-                            <button class="btn btn-main" type="button">
+                            <input id="input-search-car" type="text" class="form-control placeholder-glow" placeholder="Exemplo: Audi A6...">
+                            <button class="btn btn-main" type="button" onclick="SearchCar()" >
                                 <i class="bi bi-search fs-6"></i> Pesquisar 
                             </button>
                         </div>
@@ -95,7 +95,7 @@
                     <div class="card-showcase-body">
                         <h5 class="card-showcase-title">Audi A6 - TFSI AMBITION QUATTRO V6 Sedan 2015</h5>
                         <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 700,00</span> ao dia</p>
-                        <a href="#" class="btn btn-main">Ver mais detalhes</a>
+                        <a href="javascript:GoToSearchCarPage('gallardo')" class="btn btn-main">Ver mais detalhes</a>
                     </div>
                 </div> 
             </div>
@@ -205,7 +205,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center side-menu-box">
-            <a href="index.html" class="side-menu-link">
+            <a href="javascript:GoToHomePage()" class="side-menu-link">
                 <i class="bi bi-house-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página Inicial"></i>
             </a>
         </div>
@@ -215,13 +215,13 @@
         
         <div class="d-flex align-items-center justify-content-center side-menu-list">
             <div class="d-flex flex-column align-items-center gap-4">
-                <a href="javascript:GoToPageSearchCar()" class="side-menu-link mt-5">
+                <a href="javascript:GoToSearchCarPage()" class="side-menu-link mt-5">
                     <i class="bi bi-search fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Buscar carro"></i>
                 </a>
-                <a href="javascript:GoToPageListCar()" class="side-menu-link">
+                <a href="javascript:GoToListCarPage()" class="side-menu-link">
                     <i class="bi bi-car-front-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Lista de carros"></i>
                 </a>
-                <a href="javascript:GoToPageReservationCar()" class="side-menu-link">
+                <a href="javascript:GoToReservationCarPage()" class="side-menu-link">
                     <i class="bi bi-clipboard-check-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Fazer Reserva"></i>
                 </a>
                 <a class="side-menu-link-close" >
@@ -233,14 +233,44 @@
     </div>
 
     <script>
+        // Initi plugin - animate.css
+        const elementParagraph = document.querySelector('.container .header-title');
 
-        function Search(){
-            document.getElementById("input-search").focus();
+        elementParagraph.addEventListener('click', () => {
+            elementParagraph.classList.add('animate__animated', 'animate__rubberBand');
+
+            setTimeout(() => {
+                elementParagraph.classList.remove('animate__animated', 'animate__rubberBand');
+
+            }, 2000);
+        });
+
+        function SearchCar(){
+            
+            let elementInput = document.getElementById('input-search-car');
+            
+            if(!elementInput.value){
+                return;
+            }
+            
+            let searchResult = findCarDetailsByName(elementInput.value);
+
+            if(searchResult){
+                GoToSearchCarPage(searchResult.name);
+            }
+            else{
+                GoToSearchCarPage();
+            }
+
         }
+
+
+
 
     </script>
 
     <script src="resources/js/main.js"></script>
+    <script src="resources/js/database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
 

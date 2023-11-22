@@ -40,13 +40,13 @@
                 </div>
 
                 <div class="col d-flex justify-content-end">
-                    <a href="javascript:GoToPageSearchCar()" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
                         <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
                     </a>
-                    <a href="index.html" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
                         <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
                     </a>
-                    <a href="login.html" target="_self" class="header-nav-link">
+                    <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
                         <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
                     </a>
                 </div>
@@ -58,15 +58,15 @@
 
         <div class="row justify-content-center mt-5 mb-5">
             <div class="col-md-12">
-                <div class="card-main">
+                <div id="card-search" class="card-main">
                     <div class="card-main-body">
                         <h5 class="card-title text-center mb-3">
-                            Buscar um carro especifico <span class="common-text-marked">carro</span> que <span class="common-text-marked">combina</span> com você!
+                            Encontre agora o <span class="common-text-marked">carro</span> que <span class="common-text-marked">combina</span> com você!
                         </h5>
     
                         <div class="input-group input-group-sm mb-3">
-                            <input id="input-search" type="text" class="form-control placeholder-glow" placeholder="Exemplo: Audi A6...">
-                            <button class="btn btn-main" type="button">
+                            <input id="input-search-car" type="text" class="form-control placeholder-glow" placeholder="Exemplo: Audi A6...">
+                            <button class="btn btn-main" type="button" onclick="SearchCar()" >
                                 <i class="bi bi-search fs-6"></i> Pesquisar 
                             </button>
                         </div>
@@ -83,49 +83,18 @@
             </div>            
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-8 mb-3">
-                <div class="card">
-                    <img class="card-img-top card-details-height common-img-fluid" src="resources/Storage/AudiA6.jpeg"  alt="Wild Landscape"/>
-                    <div class="card-body">
-                        <h5>Informações básicas</h5>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <p class="text-muted mb-0">Acionamento das rodas</p>
-                                <p class="card-text">4x2</p>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <p class="text-muted mb-0">Transmissão</p>
-                                <p class="card-text">Automático</p>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <p class="text-muted mb-0">Cidade</p>
-                                <p class="card-text">São Paulo</p>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <p class="text-muted mb-0">Loja</p>
-                                <p class="card-text">AutoBahn - São Paulo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row justify-content-center ">
+            
+            <div id="car-search-error">
+                
             </div>
-            <div class="col-md-4">
-                <div class="card card-price-height">
-                    <div class="card-body">
-                        <div>
-                            <h5 class="card-title"> <span class="common-text-marked">Audi A6</span> - TFSI AMBITION QUATTRO V6 Sedan 2015</h5>
-                            <span class="common-divisor mb-3" style="width: 100%;"></span>
-                            <p class="card-subtitle mb-2 text-body-secondary">23.770 km • São Paulo</p>
-                        </div>
-                        <h5 class="mt-2">R$ 1250,00 - ao dia</h5>
-                        <div class="mt-5 mb-3">
-                            <a href="#" class="btn btn-main w-100 mb-2"><i class="bi bi-check-circle-fill"></i> Fazer Reserva</a>
-                            <a href="#" class="btn btn-main w-100"><i class="bi bi-heart-fill"></i> Add. Favoritos</a>
-                        </div>
-                        <a href="index.html" class="text-muted d-flex justify-content-end"> Voltar para a página inicial</a>
-                    </div>
-                </div>
+            
+            <div id="car-details" class="col-md-8 mb-3 ">
+                
+            </div>
+            
+            <div id="car-details-price" class="col-md-4">
+                
             </div>
         </div>
         
@@ -174,7 +143,7 @@
         </div>
 
         <div class="d-flex justify-content-center align-items-center side-menu-box">
-            <a href="index.html" class="side-menu-link">
+            <a href="javascript:GoToHomePage()" class="side-menu-link">
                 <i class="bi bi-house-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página Inicial"></i>
             </a>
         </div>
@@ -184,13 +153,13 @@
         
         <div class="d-flex align-items-center justify-content-center side-menu-list">
             <div class="d-flex flex-column align-items-center gap-4">
-                <a href="javascript:GoToPageSearchCar()" class="side-menu-link mt-5">
+                <a href="javascript:GoToSearchCarPage()" class="side-menu-link mt-5">
                     <i class="bi bi-search fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Buscar carro"></i>
                 </a>
-                <a href="javascript:GoToPageListCar()" class="side-menu-link">
+                <a href="javascript:GoToListCarPage()" class="side-menu-link">
                     <i class="bi bi-car-front-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Lista de carros"></i>
                 </a>
-                <a href="javascript:GoToPageReservationCar()" class="side-menu-link">
+                <a href="javascript:GoToReservationCarPage()" class="side-menu-link">
                     <i class="bi bi-clipboard-check-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Fazer Reserva"></i>
                 </a>
                 <a class="side-menu-link-close" >
@@ -200,39 +169,41 @@
         </div>
             
     </div>
-    
+
     <script>
-    
-    
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let nameToSearch = GetParameterByQueryString();
+            
+            if(nameToSearch){
+                showCar(nameToSearch);
+            }
+            else{
+                showErrorSearc();
+            }
+        });
 
+        function SearchCar(){
+            
+            let elementInput = document.getElementById('input-search-car');
+            
+            if(!elementInput.value){
+                return;
+            }
+            
+            let searchResult = findCarDetailsByName(elementInput.value);
 
-
-
-
-
-
-
-
-
-    
-        document.addEventListener('DOMContentLoaded', function() {
-    // Obtém a string de consulta da URL sem o caractere de interrogação inicial
-    var queryString = window.location.search.substring(4);
-
-    console.log(queryString);
-
-
-    
-
-
-
-
-
-});
+            if(searchResult){
+                GoToSearchCarPage(searchResult.name);
+            }
+            else{
+                GoToSearchCarPage();
+            }
+        }
 
     </script>
 
-    <script src="resources/js/main.js"></script>
+    <script src="resources/Js/database.js"></script>
+    <script src="resources/Js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
 
