@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
@@ -25,14 +28,15 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-2 px-4">
             <div class="container justify-content-between">
                 <div class="col">
-                    <button class="header-nav-button-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                    <button class="header-nav-button-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas">
                         <i class="bi bi-list fs-3"></i>
                     </button>
                 </div>
 
                 <div class="col d-none d-md-flex justify-content-center">
                     <p class="header-title fw-medium">
-                        Sinta a 
+                        Sinta a
                         <span class="header-title-marked">
                             Emoção
                         </span>
@@ -42,125 +46,64 @@
 
                 <div class="col d-flex justify-content-end">
                     <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
-                        <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
+                        <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
                     </a>
                     <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
-                        <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
+                        <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
                     </a>
                     <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
-                        <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
+                        <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
                     </a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container">
-        <div class="row justify-content-center mt-5 mb-5">
-            <div class="col-md-12">
-                <div id="card-search" class="card-main">
-                    <div class="card-main-body">
-                        <h5 class="card-title text-center mb-3">
-                            Encontre agora o <span class="common-text-marked">carro</span> que <span class="common-text-marked">combina</span> com você!
-                        </h5>
-    
-                        <div class="input-group input-group-sm mb-3">
-                            <input id="input-search-car" type="text" class="form-control placeholder-glow" placeholder="Exemplo: Audi Aventador...">
-                            <button class="btn btn-main" type="button" onclick="SearchCar()" >
-                                <i class="bi bi-search fs-6"></i> Pesquisar 
-                            </button>
-                        </div>
+    <main>
 
-                    </div>
-                    
-                    <div class="card-lines-decoration">
-                        <span style="width: 33.333%; background-color: #212529;"></span>
-                        <span style="width: 33.333%; background-color: #adb5bd;"></span>
-                        <span style="width: 33.333%; background-color: orange;"></span>
-                    </div>
-
+        <section class="container-fluid p-0">
+            <div class="p-5 m-0 text-center img-banner text-white">
+                <div class="container py-5">
+                    <h1 class="">Full-width jumbotron</h1>
+                    <p class="col-lg-8 mx-auto lead">
+                        This takes the basic jumbotron above and makes its background edge-to-edge with a
+                        <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in
+                        grid and utility classes.
+                    </p>
                 </div>
-            </div>            
-        </div>
-
-        <div id="section-list-car" class="row justify-content-center mt-5">
-            <div class="mb-3">
-                <h5 class="m-0">Sugestões
-                </h5>
             </div>
+        </section>
 
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/F8Tributo.jpg"  alt="...">
+        <section class="container-fluid p-0 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 justify-content-center text-center">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus saepe et, facilis dolore itaque voluptatum similique, sequi neque velit nihil commodi sint quos impedit praesentium dolores, inventore quis ea recusandae?</p>
+                  <p><a class="btn btn-secondary" href="javascript:GoToSearchCarPage('Ferrari')">View details »</a></p>
+                </div>
+                <div class="col-md-4 justify-content-center text-center">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam deleniti dolor rem delectus eligendi molestias at voluptas modi est provident nihil vel ducimus, minima corporis ex. Consectetur, debitis eius.</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="col-md-4 justify-content-center text-center">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam deleniti dolor rem delectus eligendi molestias at voluptas modi est provident nihil vel ducimus, minima corporis ex. Consectetur, debitis eius.</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+              </div>
+        </section>
 
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">Ferrari F8 Tributo - 3.9 V8 TURBO GASOLINA F1-DCT</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 3.950,00</span> ao dia</p>
-                        <a href="javascript:GoToSearchCarPage('F8 Tributo')" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
+        
 
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Lamborghini/HuracánEvo.jpg"  alt="...">
-
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">Lamborghini Huracán Evo Spyder - 5.2 V10 GASOLINA LP 640 EVO SPYDER LDF</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 4.950,00</span> ao dia</p>
-                        <a href="javascript:GoToSearchCarPage('R8')" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Mclaren/600LT.jpg"  alt="...">
-
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">McLaren 600LT - 3.8 V8 TURBO GASOLINA SSG</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 2.799,00</span> ao dia</p>
-                        <a href="javascript:GoToSearchCarPage('AMG GT')" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/AudiA6.jpeg"  alt="...">
-
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">...</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 700,00</span> ao dia</p>
-                        <a href="#" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/AudiA6.jpeg"  alt="...">
-
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">...</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 700,00</span> ao dia</p>
-                        <a href="#" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card card-showcase-height">
-                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/AudiA6.jpeg"  alt="...">
-
-                    <div class="card-showcase-body">
-                        <h5 class="card-showcase-title">...</h5>
-                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 700,00</span> ao dia</p>
-                        <a href="#" class="btn btn-main">Ver mais detalhes</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
+        
     </main>
 
     <footer class="common-background-color-secondary text-white mt-5">
@@ -178,17 +121,20 @@
                         <li class="mb-2">
                             <a href="#!" class="footer-link">Carros disponíveis</a>
                         </li>
-                       <li class="mb-2">
-                            <a href="#!" class="footer-link"></i> Voltar ao topo 
+                        <li class="mb-2">
+                            <a href="#!" class="footer-link"></i> Voltar ao topo
                                 <i class="bi bi-arrow-up-circle-fill"></i>
-                            </a> 
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6 col-md-12 mb-4">
                     <h5 class="text-uppercase">AutoBahn</h5>
-                    <p>A Autobahn é uma empresa especializada em aluguel de carros esportivos de alta performance, que oferece uma frota variada e atualizada, com modelos de marcas renomadas como Ferrari, Lamborghini, Porsche, BMW, Audi e muito mais. Você pode escolher o carro que mais combina com o seu estilo e personalidade, e desfrutar de uma experiência única e inesquecível.</p>
+                    <p>A Autobahn é uma empresa especializada em aluguel de carros esportivos de alta performance, que
+                        oferece uma frota variada e atualizada, com modelos de marcas renomadas como Ferrari,
+                        Lamborghini, Porsche, BMW, Audi e muito mais. Você pode escolher o carro que mais combina com o
+                        seu estilo e personalidade, e desfrutar de uma experiência única e inesquecível.</p>
                 </div>
             </div>
         </div>
@@ -196,41 +142,48 @@
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <a class="footer-link-main" href="#">© 2023 AUTOBAHN CARS</a>
         </div>
-        
+
     </footer>
 
-    <div class="offcanvas offcanvas-start padding-offset-navbar side-menu-container " data-bs-backdrop="true" id="offcanvas" aria-modal="true" role="dialog"> 
-       
+    <div class="offcanvas offcanvas-start padding-offset-navbar side-menu-container " data-bs-backdrop="true"
+        id="offcanvas" aria-modal="true" role="dialog">
+
         <div class="side-menu-lines-decoration">
             <span style="width: 100%; background-color: #212529;"></span>
         </div>
 
         <div class="d-flex justify-content-center align-items-center side-menu-box">
             <a href="javascript:GoToHomePage()" class="side-menu-link">
-                <i class="bi bi-house-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página Inicial"></i>
+                <i class="bi bi-house-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="common-tooltip" data-bs-title="Página Inicial"></i>
             </a>
         </div>
 
         <span class="common-divisor">
         </span>
-        
+
         <div class="d-flex align-items-center justify-content-center side-menu-list">
             <div class="d-flex flex-column align-items-center gap-4">
                 <a href="javascript:GoToSearchCarPage()" class="side-menu-link mt-5">
-                    <i class="bi bi-search fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Buscar carro"></i>
+                    <i class="bi bi-search fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Buscar carro"></i>
                 </a>
                 <a href="javascript:GoToListCarPage()" class="side-menu-link">
-                    <i class="bi bi-car-front-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Lista de carros"></i>
+                    <i class="bi bi-car-front-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Lista de carros"></i>
                 </a>
                 <a href="javascript:GoToReservationCarPage()" class="side-menu-link">
-                    <i class="bi bi-clipboard-check-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip" data-bs-title="Fazer Reserva"></i>
+                    <i class="bi bi-clipboard-check-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Fazer Reserva"></i>
                 </a>
-                <a class="side-menu-link-close" >
-                    <i class="bi bi-x-circle-fill fs-4" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip-close" data-bs-title="Fechar"></i>
+                <a class="side-menu-link-close">
+                    <i class="bi bi-x-circle-fill fs-4" data-bs-dismiss="offcanvas" aria-label="Close"
+                        data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip-close"
+                        data-bs-title="Fechar"></i>
                 </a>
             </div>
         </div>
-            
+
     </div>
 
     <script>
@@ -246,34 +199,32 @@
             }, 2000);
         });
 
-        function SearchCar(){
-            
+        function SearchCar() {
+
             let elementInput = document.getElementById('input-search-car');
-            
-            if(!elementInput.value){
+
+            if (!elementInput.value) {
                 return;
             }
-            
+
             let searchResult = findCarDetailsByName(elementInput.value);
 
-            if(searchResult){
+            if (searchResult) {
                 GoToSearchCarPage(searchResult.name);
             }
-            else{
+            else {
                 GoToSearchCarPage();
             }
 
         }
-
-
-
 
     </script>
 
     <script src="resources/js/main.js"></script>
     <script src="resources/js/database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

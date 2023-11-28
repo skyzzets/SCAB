@@ -77,9 +77,9 @@ CarDetailsList.push(new CarDetails('Panamera', 'Porsche', '2018', 'R$ 589,000', 
 
 // functions to help optimize querys on database
 
-function findCarDetailsByName(name) {
-    let lowerCaseName = name.toLowerCase();
-    return CarDetailsList.find(car => car.name.toLowerCase().includes(lowerCaseName));
+function findCarDetailsByName(search) {
+    let lowerCaseName = search.toLowerCase();
+    return CarDetailsList.find(car => car.name.toLowerCase().includes(lowerCaseName) || car.model.toLowerCase().includes(lowerCaseName));
 }
 
 function showCarDetailsPrice(name) {

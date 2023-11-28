@@ -240,7 +240,7 @@ body{
 
 
 .card-showcase-height{
-    max-height: 455px;
+    height: 455px;
 }
 .card-showcase-body{
     padding: 1rem;
@@ -267,4 +267,10 @@ body{
 
 .card-details-img-height{
     width: 100%;
+}
+
+.img-banner{   
+    background-image: url(../Storage/img-Banner.jpg);
+    background-position: center;
+    background-size: cover;
 }
