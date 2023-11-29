@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="resources/StyleSheets/style.css">
+    <link rel="icon" href="resources/Storage/Senna.png" type="image/x-icon">
+    <title>AutoBahn Cars</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-lines-decoration">
+            <span style="width: 33.333%; background-color: #212529;"></span>
+            <span style="width: 33.333%; background-color: #adb5bd;"></span>
+            <span style="width: 33.333%; background-color: orange;"></span>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-2 px-4">
+            <div class="container justify-content-between">
+                <div class="col">
+                    <button class="header-nav-button-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                        <i class="bi bi-list fs-3"></i>
+                    </button>
+                </div>
+
+                <div class="col d-none d-md-flex justify-content-center">
+                    <p class="header-title fw-medium">
+                        Sinta a 
+                        <span class="header-title-marked">
+                            Emoção
+                        </span>
+                        em cada curva!
+                    </p>
+                </div>
+
+                <div class="col d-flex justify-content-end">
+                    <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
+                    </a>
+                    <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
+                    </a>
+                    <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div id="section-list-car" class="row justify-content-center mt-5">
+            <div class="mb-3">
+                <h5 class="m-0">Porsche
+                </h5>
+            </div>
+            
+            <!-- Porsche -->
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/911Carreira.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche 911 Carreira Cabriolet - 3.0 24V H6 GASOLINA CARRERA CABRIOLET PDK</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 1.280,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('911')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/911GT3.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche 911 GT3 - 4.0 24V H6 GASOLINA GT3 PDK</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 2.439,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('911 GT3')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/911GT3RS.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche 911 GT3 RS - 4.0 24V H6 GASOLINA GT3 RS PDK</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 5.200,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('911 GT3 RS')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/CaymanGTS.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche Cayman GTS - 3.4 GTS I6 24V GASOLINA 2P AUTOMÁTICO</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 479,90</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('Cayman GTS')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/CaymanGT4RS.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche Cayman GT4 RS - 4.0 H6 GASOLINA CAYMAN GT4 RS PDK</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 2.400,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('Cayman GT4 RS')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Porsche/Panamera.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Porsche Panamera - 2.9 V6 E-HYBRID 4 PDK</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 889,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('Panamera')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </main>
+
+    
+    <script src="resources/js/main.js"></script>
+
+</body>

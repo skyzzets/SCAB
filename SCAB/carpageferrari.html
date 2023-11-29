@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <link rel="stylesheet" href="resources/StyleSheets/style.css">
+    <link rel="icon" href="resources/Storage/Senna.png" type="image/x-icon">
+    <title>AutoBahn Cars</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-lines-decoration">
+            <span style="width: 33.333%; background-color: #212529;"></span>
+            <span style="width: 33.333%; background-color: #adb5bd;"></span>
+            <span style="width: 33.333%; background-color: orange;"></span>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-2 px-4">
+            <div class="container justify-content-between">
+                <div class="col">
+                    <button class="header-nav-button-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                        <i class="bi bi-list fs-3"></i>
+                    </button>
+                </div>
+
+                <div class="col d-none d-md-flex justify-content-center">
+                    <p class="header-title fw-medium">
+                        Sinta a 
+                        <span class="header-title-marked">
+                            Emoção
+                        </span>
+                        em cada curva!
+                    </p>
+                </div>
+
+                <div class="col d-flex justify-content-end">
+                    <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
+                    </a>
+                    <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
+                    </a>
+                    <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div id="section-list-car" class="row justify-content-center mt-5">
+            <div class="mb-3">
+                <h5 class="m-0">Ferrari
+                </h5>
+            </div>
+
+            <!-- Ferrari -->
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/296GTB.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari 296 GTB - 3.0 V6 TURBO PHEV F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 4.288,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('296 GTB')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/458Italia.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari 458 Italia - 4.5 V8 GASOLINA F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 2.439,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('458 Italia')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/488Pista.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari 488 Pista - 3.9 V8 TURBO GASOLINA F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 6.200,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('488 Pista')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/F8Tributo.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari F8 Tributo - 3.9 V8 TURBO GASOLINA F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 3.950,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('F8 Tributo')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/Roma.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari Roma - 3.9 V8 TURBO GASOLINA F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 2.950,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('Roma')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card card-showcase-height">
+                    <img class="card-img-top card-main-img common-img-fluid" src="resources/Storage/Ferrari/SF90.jpg"  alt="...">
+
+                    <div class="card-showcase-body">
+                        <h5 class="card-showcase-title">Ferrari SF 90 - 3.9 V8 TURBO PHEV STRADALE F1-DCT</h5>
+                        <p class="card-showcase-text">Disponível por <span class="common-text-marked">R$ 5.439,00</span> ao dia</p>
+                        <a href="javascript:GoToSearchCarPage('SF 90')" class="btn btn-main">Ver mais detalhes</a>
+                    </div>
+                </div> 
+            </div>
+
+    </main>
+
+    
+    <script src="resources/js/main.js"></script>
+
+</body>
