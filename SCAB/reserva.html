@@ -17,6 +17,27 @@
 </head>
 
 <body class="background-reservation">
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg py-2 px-4" style="background: rgba(92, 104, 110, 0.0); backdrop-filter: blur(0px);">
+            <div class="container justify-content-between">
+
+                <div class="col d-flex justify-content-end">
+                    <a href="javascript:GoToSearchCarPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-search fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Pesquisar"></i>
+                    </a>
+                    <a href="javascript:GoToHomePage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-house-fill fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Página incial"></i>
+                    </a>
+                    <a href="javascript:GoToLoginPage()" target="_self" class="header-nav-link">
+                        <i class="bi bi-person-circle fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="common-tooltip" data-bs-title="Perfil"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main class="container">
         <div class="row justify-content-center my-5">
             <div class="col-md-6">
@@ -32,82 +53,72 @@
 
 
 
-                            <div>
-                                <label for="validationCustom1">Nome Completo:</label>
-                                <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1" class="mt-2">Endereço de E-mail:</label>
-                                <input class="form-control" type="email" id="validationCustom1" name="email"
-                                    required>
-                                    <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1">Número de telefonee:</label>
-                                <input class="form-control" type="number" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom2" class="mt-2">Endereço de E-mail:</label>
-                                <input class="form-control" type="email" id="validationCustom1" name="email"
-                                    required>
-                                    <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1">Nome Completo:</label>
-                                <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1" class="mt-2">Endereço de E-mail:</label>
-                                <input class="form-control" type="email" id="validationCustom1" name="email"
-                                    required>
-                                    <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1">Nome Completo:</label>
-                                <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1" class="mt-2">Endereço de E-mail:</label>
-                                <input class="form-control" type="email" id="validationCustom1" name="email"
-                                    required>
-                                    <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1">Nome Completo:</label>
-                                <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
-
-                            <div>
-                                <label for="validationCustom1" class="mt-2">Endereço de E-mail:</label>
-                                <input class="form-control" type="email" id="validationCustom1" name="email"
-                                    required>
-                                    <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
-                            </div>
-                            
-                            <div>
-                                <label for="validationCustom1">Nome Completo:</label>
-                                <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto"
-                                    required>
-                                <div class="invalid-feedback">Digite seu Nome Completo</div>
-                            </div>
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Nome Completo:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="nomeCompleto" required>
+                    
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Endereço de E-mail:</label>
+                                        <input class="form-control" type="email" id="validationCustom1" name="email" required>
+                                        <div class="invalid-feedback">Digite seu Endereço de E-mail</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Número de telefone:</label>
+                                        <input class="form-control" type="number" id="validationCustom1" name="numeroTelefone" required>
+                                        <div class="invalid-feedback">Digite seu Número de telefone</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom2" class="mt-2 text-white">Endereço Residencial:</label>
+                                        <input class="form-control" type="text" id="validationCustom2" name="enderecoResidencial" required>
+                                        <div class="invalid-feedback">Digite seu Endereço Residencial</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Número do Cartão de Crédito:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="numeroCartao" required>
+                                        <div class="invalid-feedback">Digite seu Número do Cartão de Crédito</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Data de Validade do Cartão:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="dataValidadeCartao" required>
+                                        <div class="invalid-feedback">Digite a Data de Validade do Cartão</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Nome do Titular do Cartão:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="nomeTitularCartao" required>
+                                        <div class="invalid-feedback">Digite o Nome do Titular do Cartão</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Código de Segurança do Cartão (CVV):</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="cvvCartao" required>
+                                        <div class="invalid-feedback">Digite o Código de Segurança do Cartão (CVV)</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Número da Carteira de Motorista do Condutor Principal:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="numeroCarteiraMotorista" required>
+                                        <div class="invalid-feedback">Digite o Número da Carteira de Motorista do Condutor Principal</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">País de Emissão da Carteira de Motorista:</label>
+                                        <input class="form-control" type="text" id="validationCustom1" name="paisEmissaoCarteira" required>
+                                        <div class="invalid-feedback">Digite o País de Emissão da Carteira de Motorista</div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="validationCustom1" class="mt-2 text-white">Termos e Condições de Aluguel:</label>
+                                        <input type="checkbox" id="termsCheckbox" name="terms" required>
+                                        <div class="invalid-feedback">Você deve concordar com os Termos e Condições de Aluguel</div>
+                                    </div>
+                                    
 
 
 
@@ -118,6 +129,7 @@
 
                             <div class="">
                                 <input class="btn btn-main mt-4" type="submit" value="Enviar Reserva">
+                                <a href="javascript:GoToHomePage()"></a>
                             </div>
 
 
