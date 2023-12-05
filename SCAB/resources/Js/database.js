@@ -21,7 +21,7 @@ var CarDetailsList = [];
 
 //Ferrari//
 
-CarDetailsList.push(new CarDetails('296 GTB', 'Ferrari', '2023', 'R$ 4.288,00', 'Automática','Vermelho', 'São Paulo', '0', 'Traseira', 'A Ferrari 296 GTB, com seu motor V6 Turbo PHEV e transmissão F1-DCT, personifica a excelência italiana em performance e eficiência. Seu design elegante e aerodinâmico combina-se perfeitamente com a inovação tecnológica, proporcionando uma experiência de condução emocionante e sustentável. No interior, o luxo se encontra com a funcionalidade, criando um ambiente envolvente. Este modelo é uma síntese magistral de potência, estilo e responsabilidade ambiental, representando o que há de melhor na engenharia automotiva da Ferrari.', '3.0 V6 TURBO PHEV F1-DCT', 'resources/Storage/Ferrari/296GTB.jpg'));
+CarDetailsList.push(new CarDetails('296 GTB', 'Ferrari', '2023', 'R$ 4.288,00', 'Automática', 'Vermelho', 'São Paulo', '0', 'Traseira', 'A Ferrari 296 GTB, com seu motor V6 Turbo PHEV e transmissão F1-DCT, personifica a excelência italiana em performance e eficiência. Seu design elegante e aerodinâmico combina-se perfeitamente com a inovação tecnológica, proporcionando uma experiência de condução emocionante e sustentável. No interior, o luxo se encontra com a funcionalidade, criando um ambiente envolvente. Este modelo é uma síntese magistral de potência, estilo e responsabilidade ambiental, representando o que há de melhor na engenharia automotiva da Ferrari.', '3.0 V6 TURBO PHEV F1-DCT', 'resources/Storage/Ferrari/296GTB.jpg'));
 
 CarDetailsList.push(new CarDetails('458 Italia', 'Ferrari', '2011', 'R$ 2.439,00', 'Automatico', 'Vermelho', 'São Paulo', '13.700', 'Traseira', 'A Ferrari 458 Italia, com seu motor V8 de 4.5 litros e transmissão F1-DCT, é uma obra-prima de engenharia e elegância. Seu design arrojado e linhas fluidas combinam-se harmoniosamente com um desempenho excepcional, proporcionando uma experiência de condução emocionante. No interior, a fusão de luxo e tecnologia eleva o conforto a novos patamares. Esta obra de arte automotiva é uma expressão sublime de paixão pela velocidade e design refinado.', '4.5 V8 GASOLINA F1-DCT', 'resources/Storage/Ferrari/458Italia.jpg'));
 
@@ -29,7 +29,7 @@ CarDetailsList.push(new CarDetails('488 Pista', 'Ferrari', '2020', 'R$ 6.200,00'
 
 CarDetailsList.push(new CarDetails('F8 Tributo', 'Ferrari', '2021', 'R$ 3.950,00', 'Automatico', 'Amarelo', 'São Paulo', '2.955', 'Traseira', 'A Ferrari F8 Tributo, com seu motor V8 turbo e transmissão F1-DCT, é uma obra-prima de elegância e potência. Seu design arrojado é uma expressão de sofisticação, enquanto o desempenho excepcional oferece uma experiência de condução emocionante. No interior, materiais luxuosos e tecnologia de ponta se unem para criar um ambiente envolvente e exclusivo. Esta máquina é mais do que um carro; é uma sinfonia de engenharia italiana que harmoniza perfeitamente desempenho e sofisticação.', '3.9 V8 TURBO GASOLINA F1-DCT', 'resources/Storage/Ferrari/F8Tributo.jpg'));
 
-CarDetailsList.push(new CarDetails('Roma', 'Ferrari', '2022', 'R$ 2.950,00', 'Automatizada DCT','Vermelho', 'São Paulo', '430', 'Traseira', 'A Ferrari Roma, com seu motor V8 turbo e transmissão F1-DCT, é um tributo à elegância e desempenho. Seu design sofisticado incorpora linhas fluidas, enquanto o motor potente proporciona uma experiência de condução emocionante. O interior combina luxo e tecnologia de forma harmoniosa, elevando a jornada a um nível de requinte. A Roma é mais do que um carro; é uma obra-prima que personifica a paixão italiana pela velocidade e estilo refinado.', '3.9 V8 TURBO GASOLINA F1-DCT', 'resources/Storage/Ferrari/Roma.jpg'));
+CarDetailsList.push(new CarDetails('Roma', 'Ferrari', '2022', 'R$ 2.950,00', 'Automatizada DCT', 'Vermelho', 'São Paulo', '430', 'Traseira', 'A Ferrari Roma, com seu motor V8 turbo e transmissão F1-DCT, é um tributo à elegância e desempenho. Seu design sofisticado incorpora linhas fluidas, enquanto o motor potente proporciona uma experiência de condução emocionante. O interior combina luxo e tecnologia de forma harmoniosa, elevando a jornada a um nível de requinte. A Roma é mais do que um carro; é uma obra-prima que personifica a paixão italiana pela velocidade e estilo refinado.', '3.9 V8 TURBO GASOLINA F1-DCT', 'resources/Storage/Ferrari/Roma.jpg'));
 
 CarDetailsList.push(new CarDetails('SF 90', 'Ferrari', '2022', 'R$ 5.439,00', 'Automática', 'Vermelho', 'São Paulo', '000', 'Traseira', 'A Ferrari SF 90 é uma obra-prima de engenharia e design. Com linhas esculpidas e aerodinâmica impressionante, personifica elegância e velocidade. Seu sistema híbrido inovador e motor V8 oferecem um desempenho eletrizante. No interior, materiais luxuosos e tecnologia de ponta se unem para criar uma experiência de condução sofisticada. A SF 90 é a encarnação da paixão da Ferrari pela excelência, fundindo potência e estilo de maneira sublime.', '3.9 V8 TURBO GASOLINA F1-DCT', 'resources/Storage/Ferrari/SF90.jpg'));
 
@@ -49,13 +49,13 @@ CarDetailsList.push(new CarDetails('Urus', 'Lamborghini', '2022', 'R$ 3.390,00',
 
 //McLaren//
 
-CarDetailsList.push(new CarDetails('570s', 'McLaren', '2018', 'R$ 2.100,00', 'Automática','Preto', 'São Paulo', '8.325', 'Traseira', 'A McLaren 570S, com seu motor V8 Turbo e transmissão SSG, é uma fusão refinada de desempenho e elegância. Seu design escultural e linhas aerodinâmicas expressam sofisticação, enquanto a potência do motor oferece uma experiência de condução envolvente. No interior, materiais luxuosos se combinam com tecnologia de ponta, proporcionando conforto e conectividade. Este modelo é uma obra-prima da engenharia britânica, destacando-se pela harmonia perfeita entre performance esportiva e estilo requintado.', '3.8 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/570s.jpg'));
+CarDetailsList.push(new CarDetails('570s', 'McLaren', '2018', 'R$ 2.100,00', 'Automática', 'Preto', 'São Paulo', '8.325', 'Traseira', 'A McLaren 570S, com seu motor V8 Turbo e transmissão SSG, é uma fusão refinada de desempenho e elegância. Seu design escultural e linhas aerodinâmicas expressam sofisticação, enquanto a potência do motor oferece uma experiência de condução envolvente. No interior, materiais luxuosos se combinam com tecnologia de ponta, proporcionando conforto e conectividade. Este modelo é uma obra-prima da engenharia britânica, destacando-se pela harmonia perfeita entre performance esportiva e estilo requintado.', '3.8 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/570s.jpg'));
 
-CarDetailsList.push(new CarDetails('600LT', 'McLaren', '2023', 'R$ 2.799,00', 'Automatica','Verde', 'São Paulo', '820', 'Traseira', 'A McLaren 600LT, equipada com um motor V8 Turbo, é uma obra-prima de potência e elegância. Seu design aerodinâmico sugere velocidade, enquanto a transmissão SSG proporciona uma condução envolvente. No interior, a fusão de luxo e tecnologia eleva a experiência do condutor. Este modelo é uma expressão sublime da engenharia, unindo desempenho excepcional e sofisticação com maestria.', '3.8 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/600LT.jpg'));
+CarDetailsList.push(new CarDetails('600LT', 'McLaren', '2023', 'R$ 2.799,00', 'Automatica', 'Verde', 'São Paulo', '820', 'Traseira', 'A McLaren 600LT, equipada com um motor V8 Turbo, é uma obra-prima de potência e elegância. Seu design aerodinâmico sugere velocidade, enquanto a transmissão SSG proporciona uma condução envolvente. No interior, a fusão de luxo e tecnologia eleva a experiência do condutor. Este modelo é uma expressão sublime da engenharia, unindo desempenho excepcional e sofisticação com maestria.', '3.8 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/600LT.jpg'));
 
-CarDetailsList.push(new CarDetails('720S', 'McLaren', '2020', 'R$ 2.950,00', 'Automatica','Preto', 'São Paulo', '1.400', 'Traseira', 'A McLaren 720S, com seu motor V8 Turbo e transmissão SSG, é uma obra-prima que funde poder e elegância. Seu design escultural sugere velocidade, enquanto o desempenho excepcional oferece uma experiência de condução emocionante. No interior, a fusão de luxo e tecnologia eleva a experiência do condutor. Este modelo é uma expressão sublime de precisão britânica, onde cada detalhe reflete a busca pela perfeição na performance e no estilo.', '4.0 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/720S.jpg'));
+CarDetailsList.push(new CarDetails('720S', 'McLaren', '2020', 'R$ 2.950,00', 'Automatica', 'Preto', 'São Paulo', '1.400', 'Traseira', 'A McLaren 720S, com seu motor V8 Turbo e transmissão SSG, é uma obra-prima que funde poder e elegância. Seu design escultural sugere velocidade, enquanto o desempenho excepcional oferece uma experiência de condução emocionante. No interior, a fusão de luxo e tecnologia eleva a experiência do condutor. Este modelo é uma expressão sublime de precisão britânica, onde cada detalhe reflete a busca pela perfeição na performance e no estilo.', '4.0 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/720S.jpg'));
 
-CarDetailsList.push(new CarDetails('720S Spider', 'McLaren', '2020', 'R$ 5.490,00', 'Automatica','Azul', 'São Paulo', '350', 'Traseira', 'A McLaren 720S, com seu motor V8 Turbo, é uma obra-prima de desempenho e sofisticação. Seu design arrojado e linhas aerodinâmicas evocam elegância e velocidade. O teto conversível Spider SSG amplifica a experiência de condução, combinando estilo aberto com tecnologia avançada. No interior, materiais premium e tecnologia intuitiva se unem para criar um ambiente luxuoso. A 720S é mais do que um carro; é uma expressão de paixão pela velocidade e engenharia refinada, elevando cada viagem a uma experiência excepcional.', '4.0 V8 TURBO GASOLINA SPIDER SSG', 'resources/Storage/McLaren/720S_blue.jpg'));
+CarDetailsList.push(new CarDetails('720S Spider', 'McLaren', '2020', 'R$ 5.490,00', 'Automatica', 'Azul', 'São Paulo', '350', 'Traseira', 'A McLaren 720S, com seu motor V8 Turbo, é uma obra-prima de desempenho e sofisticação. Seu design arrojado e linhas aerodinâmicas evocam elegância e velocidade. O teto conversível Spider SSG amplifica a experiência de condução, combinando estilo aberto com tecnologia avançada. No interior, materiais premium e tecnologia intuitiva se unem para criar um ambiente luxuoso. A 720S é mais do que um carro; é uma expressão de paixão pela velocidade e engenharia refinada, elevando cada viagem a uma experiência excepcional.', '4.0 V8 TURBO GASOLINA SPIDER SSG', 'resources/Storage/McLaren/720S_blue.jpg'));
 
 CarDetailsList.push(new CarDetails('765LT', 'McLaren', '2021', 'R$ 4.490,00', 'Automatica', 'Roxo', 'São Paulo', '1.480', 'Traseira', 'A McLaren 765LT, com seu motor V8 Turbo e transmissão SSG, redefine a excelência em desempenho automotivo. Seu design impressionante e linhas aerodinâmicas expressam elegância agressiva. Esta obra-prima combina potência bruta com precisão técnica, oferecendo uma experiência de condução exuberante. No interior, luxo se alia à funcionalidade, criando um ambiente onde cada detalhe reflete a busca pela perfeição. A 765LT é mais do que um veículo; é uma expressão de paixão pela velocidade e inovação, representando a vanguarda da engenharia da McLaren.', '4.0 V8 TURBO GASOLINA SSG', 'resources/Storage/McLaren/765LT.jpg'));
 
@@ -101,12 +101,28 @@ function showCarDetailsPrice(name) {
                 </div>
                 <h5 class="mt-2">${elementCar.price} - ao dia</h5>
                 <div class="mt-5 mb-3">
-                    <a href="#" class="btn btn-main w-100 mb-2"><i class="bi bi-check-circle-fill"></i> Fazer Reserva</a>
-                    <a href="#" class="btn btn-main w-100"><i class="bi bi-heart-fill"></i> Add. Favoritos</a>
-                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+               </button>
                 <a href="index.html" class="text-muted d-flex justify-content-end"> Voltar para a página inicial</a>
             </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
         </div>
+        </div>
+       
     `;
 
     // Inserindo o elemento no section Id
