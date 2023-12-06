@@ -70,6 +70,14 @@ body {
     background-color: var(--color-secondary);
 }
 
+.common-mb-6 {
+    margin-bottom: 4.5rem;
+}
+
+.common-bg-color{
+    background-color: orange;
+}
+
 .login-background-color-main {
     background-color: #E0E0E0;
 }
@@ -285,8 +293,6 @@ body {
     color: var(--color-black);
 }
 
-
-
 .card-details-height {
     height: 900px;
 }
@@ -295,15 +301,9 @@ body {
     height: 330px;
 }
 
-
-
 .card-details-img-height {
     width: 100%;
 }
-
-
-
-
 
 .img-banner {
     background-image: url(../Storage/img-Banner.jpg);
@@ -317,27 +317,47 @@ body {
     background-size: cover;
 }
 
-#image-track>.image {
-    width: 80vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
-}
-
-#image-track {
-    display: flex;
-    gap: 4vmin;
-    position: relative;
-    left: 25%;
-    transform: translate(0%, 0%);
-    user-select: none;
-}
-
-
-
-.background-reservation{
+.background-reservation {
     background-image: url(../Storage/Jesko_absolut.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.swiper-container {
+    width: 689.5px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    left: 30vmin;
+}
+
+.news-carrousel-img {
+    background-image: url(../Storage/News/1322444.png);
+    background-position: center ;
+    background-size: cover;
+    height: 589.5px;
+}
+
+.news-carrousel-img2 {
+    background-image: url(../Storage/News/1166096.jpg);
+    background-position: center ;
+    background-size: cover;
+    height: 589.5px;
+}
+
+.news-carrousel-img3 {
+    background-image: url(../Storage/News/1304880.jpg);
+    background-position: center ;
+    background-size: cover;
+    height: 589.5px;
+}
+
+.news-carrousel-img4 {
+    background-image: url(../Storage/News/1166185.jpg);
+    background-position: center ;
+    background-size: cover;
+    height: 589.5px;
 }

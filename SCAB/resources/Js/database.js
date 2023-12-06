@@ -92,36 +92,22 @@ function showCarDetailsPrice(name) {
     let elementCar = findCarDetailsByName(name);
 
     let elementCarDetailsPrice = `
-        <div class="card card-price-height animate__animated animate__fadeInRight">
-            <div class="card-body">
-                <div>
-                    <h5 class="card-title"> ${elementCar.model} <span class="common-text-marked">${elementCar.name}</span> - ${elementCar.summary} - ${elementCar.year}</h5>
-                    <span class="common-divisor mb-3" style="width: 100%;"></span>
-                    <p class="card-subtitle mb-2 text-body-secondary">${elementCar.km} • ${elementCar.location}</p>
-                </div>
-                <h5 class="mt-2">${elementCar.price} - ao dia</h5>
-                <div class="mt-5 mb-3">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-               </button>
-                <a href="index.html" class="text-muted d-flex justify-content-end"> Voltar para a página inicial</a>
-            </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+    <div class="card card-price-height animate__animated animate__fadeInRight">
+    <div class="card-body">
+        <div>
+            <h5 class="card-title"> ${elementCar.model} <span class="common-text-marked">${elementCar.name}</span> - ${elementCar.summary} - ${elementCar.year}</h5>
+            <span class="common-divisor mb-3" style="width: 100%;"></span>
+            <p class="card-subtitle mb-2 text-body-secondary">${elementCar.km} • ${elementCar.location}</p>
         </div>
+        <h5 class="mt-2">${elementCar.price} - ao dia</h5>
+        <div class="mt-5 mb-3">
+            <a href="javascript:GoToReservationCarPage()" target="_self" class="btn btn-main w-100 mb-2"><i class="bi bi-check-circle-fill"></i> Fazer Reserva</a>
+            <a href="javascript:GoToLoginPage()" target="_self" class="btn btn-main w-100"><i class="bi bi-heart-fill"></i> Add. Favoritos</a>
         </div>
+        <a href="index.html" class="text-muted d-flex justify-content-end"> Voltar para a página inicial</a>
+    </div>
+</div>
+
        
     `;
 

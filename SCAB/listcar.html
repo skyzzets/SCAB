@@ -364,6 +364,128 @@
     </main>
 
     
-    <script src="resources/js/main.js"></script>
+    <footer class="common-background-color-secondary text-white mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-lg-12 mb-4">
+                    <h5 class="text-uppercase">Navegação</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a href="javascript:GoToHomePage()" target="_self" class="footer-link">Página inicial</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:GoToSearchCarPage()" target="_self" class="footer-link">Buscar carro</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:GoToListCarPage()" target="_self" class="footer-link" >Carros disponíveis</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="footer-link"></i> Voltar ao topo
+                                <i class="bi bi-arrow-up-circle-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="col-lg-6 col-lg-12 mb-4">
+                    <h5 class="text-uppercase">AutoBahn</h5>
+                    <p>A Autobahn é uma empresa especializada em aluguel de carros esportivos de alta performance, que
+                        oferece uma frota variada e atualizada, com modelos de marcas renomadas como Ferrari,
+                        Lamborghini, Porsche, BMW, Audi e muito mais. Você pode escolher o carro que mais combina com o
+                        seu estilo e personalidade, e desfrutar de uma experiência única e inesquecível.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="footer-link-main" href="#">© 2023 AUTOBAHN CARS</a>
+        </div>
+
+    </footer>
+
+    <div class="offcanvas offcanvas-start padding-offset-navbar side-menu-container " data-bs-backdrop="true"
+        id="offcanvas" aria-modal="true" role="dialog">
+
+        <div class="side-menu-lines-decoration">
+            <span style="width: 100%; background-color: #212529;"></span>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center side-menu-box">
+            <a href="javascript:GoToHomePage()" class="side-menu-link">
+                <i class="bi bi-house-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="common-tooltip" data-bs-title="Página Inicial"></i>
+            </a>
+        </div>
+
+        <span class="common-divisor">
+        </span>
+
+        <div class="d-flex align-items-center justify-content-center side-menu-list">
+            <div class="d-flex flex-column align-items-center gap-4">
+                <a href="javascript:GoToSearchCarPage()" class="side-menu-link mt-5">
+                    <i class="bi bi-search fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Buscar carro"></i>
+                </a>
+                <a href="listcar.html" class="side-menu-link">
+                    <i class="bi bi-car-front-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Lista de carros"></i>
+                </a>
+                <a href="javascript:GoToReservationCarPage()" class="side-menu-link">
+                    <i class="bi bi-clipboard-check-fill fs-4" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-custom-class="common-tooltip" data-bs-title="Fazer Reserva"></i>
+                </a>
+                <a class="side-menu-link-close">
+                    <i class="bi bi-x-circle-fill fs-4" data-bs-dismiss="offcanvas" aria-label="Close"
+                        data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="common-tooltip-close"
+                        data-bs-title="Fechar"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Initi plugin - animate.css
+        const elementParagraph = document.querySelector('.container .header-title');
+
+        elementParagraph.addEventListener('click', () => {
+            elementParagraph.classList.add('animate__animated', 'animate__rubberBand');
+
+            setTimeout(() => {
+                elementParagraph.classList.remove('animate__animated', 'animate__rubberBand');
+
+            }, 2000);
+        });
+
+        function SearchCar() {
+
+            let elementInput = document.getElementById('input-search-car');
+
+            if (!elementInput.value) {
+                return;
+            }
+
+            let searchResult = findCarDetailsByName(elementInput.value);
+
+            if (searchResult) {
+                GoToSearchCarPage(searchResult.name);
+            }
+            else {
+                GoToSearchCarPage();
+            }
+
+        }
+
+    </script>
+
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/ulg/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
+</html>

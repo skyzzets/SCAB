@@ -33,13 +33,13 @@ function GoToSearchCarPage(name) {
 }
 
 function GoToListCarPage() {
-    let pageRedirect = "index.html#section-list-car"
+    let pageRedirect = "listcar.html"
 
     window.location.href = pageRedirect;
 }
 
 function GoToReservationCarPage() {
-    let pageRedirect = "details.html"
+    let pageRedirect = "reserva.html"
 
     window.location.href = pageRedirect;
 }
@@ -49,6 +49,25 @@ function GoToLoginPage() {
 
     window.location.href = pageRedirect;
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 35,
+        grabCursor: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});
+
 
 
 
